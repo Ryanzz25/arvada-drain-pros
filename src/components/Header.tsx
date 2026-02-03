@@ -33,7 +33,7 @@ const Header = () => {
             <a href="/services" className="font-medium hover:text-primary transition-colors">
               Services
             </a>
-            <a href="#areas" className="font-medium hover:text-primary transition-colors">
+            <a href="/areas" className="font-medium hover:text-primary transition-colors">
               Areas Served
             </a>
             <a href="#about" className="font-medium hover:text-primary transition-colors">
@@ -68,7 +68,7 @@ const Header = () => {
               <a href="/services" className="font-medium hover:text-primary transition-colors">
                 Services
               </a>
-              <a href="#areas" className="font-medium hover:text-primary transition-colors">
+              <a href="/areas" className="font-medium hover:text-primary transition-colors">
                 Areas Served
               </a>
               <a href="#about" className="font-medium hover:text-primary transition-colors">
