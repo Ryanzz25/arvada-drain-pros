@@ -81,10 +81,13 @@ const HeroSection = () => {
             <h3 className="font-display text-2xl mb-2">GET YOUR FREE QUOTE</h3>
             <p className="text-muted-foreground mb-6">No obligation. Response within 30 minutes.</p>
             
-            <form className="space-y-4">
+            <form action="https://formsubmit.co/ryanvamail@gmail.com" method="POST" className="space-y-4">
+              <input type="hidden" name="_subject" value="New Quote Request from ArvadaDrainPro" />
+              <input type="hidden" name="_captcha" value="false" />
               <div>
                 <input 
                   type="text" 
+                  name="name"
                   placeholder="Your Name *" 
                   required
                   className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all"
@@ -93,6 +96,7 @@ const HeroSection = () => {
               <div>
                 <input 
                   type="tel" 
+                  name="phone"
                   placeholder="Phone Number *" 
                   required
                   className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all"
@@ -101,12 +105,14 @@ const HeroSection = () => {
               <div>
                 <input 
                   type="email" 
+                  name="email"
                   placeholder="Email Address" 
                   className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all"
                 />
               </div>
               <div>
                 <select 
+                  name="service"
                   className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all text-muted-foreground"
                   defaultValue=""
                 >
@@ -121,6 +127,7 @@ const HeroSection = () => {
               </div>
               <div>
                 <textarea 
+                  name="message"
                   placeholder="Describe your drain issue..."
                   rows={3}
                   className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary transition-all resize-none"

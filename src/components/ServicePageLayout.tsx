@@ -208,20 +208,25 @@ const ServicePageLayout = ({ service }: ServicePageLayoutProps) => {
                 <h3 className="font-display text-2xl mb-2">GET YOUR FREE QUOTE</h3>
                 <p className="text-muted-foreground mb-6">No obligation. Fast response.</p>
                 
-                <form className="space-y-4">
+                <form action="https://formsubmit.co/ryanvamail@gmail.com" method="POST" className="space-y-4">
+                  <input type="hidden" name="_subject" value={`Quote Request: ${service.title}`} />
+                  <input type="hidden" name="_captcha" value="false" />
                   <input 
                     type="text" 
+                    name="name"
                     placeholder="Your Name *" 
                     required
                     className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <input 
                     type="tel" 
+                    name="phone"
                     placeholder="Phone Number *" 
                     required
                     className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary"
                   />
                   <textarea 
+                    name="message"
                     placeholder="Describe your issue..."
                     rows={3}
                     className="w-full px-4 py-3 bg-background border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-primary resize-none"
