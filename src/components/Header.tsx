@@ -47,6 +47,9 @@ const Header = () => {
           
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
+            <a href="/" className="font-medium hover:text-primary transition-colors">
+              Home
+            </a>
             <a href="/services" className="font-medium hover:text-primary transition-colors">
               Services
             </a>
@@ -111,6 +114,9 @@ const Header = () => {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-white/10 pt-4 animate-fade-in">
             <div className="flex flex-col gap-4">
+              <a href="/" className="font-medium hover:text-primary transition-colors">
+                Home
+              </a>
               <a href="/services" className="font-medium hover:text-primary transition-colors">
                 Services
               </a>
