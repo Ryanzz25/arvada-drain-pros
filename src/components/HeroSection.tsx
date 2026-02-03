@@ -9,9 +9,10 @@ const HeroSection = () => {
         <img 
           src={heroImage} 
           alt="Professional drain cleaning service in Arvada" 
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/95 to-primary/30" />
+        <div className="absolute inset-0 bg-secondary/85" />
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/90 to-primary/30" />
       </div>
       
       {/* Grid pattern overlay */}
@@ -49,9 +50,9 @@ const HeroSection = () => {
             
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-up animation-delay-300">
-              <a href="tel:+17205551234" className="btn-hero">
+              <a href="tel:+18448980295" className="btn-hero">
                 <Phone className="w-5 h-5" />
-                Call (720) 555-1234
+                Call (844) 8980-295
               </a>
               <a href="#quote" className="btn-hero-secondary bg-transparent border-white text-white hover:bg-white hover:text-secondary">
                 Get Free Quote

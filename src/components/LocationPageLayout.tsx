@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import heroImage from "@/assets/hero-location-page.jpg";
 
 interface LocationFAQ {
   question: string;
@@ -55,7 +56,7 @@ const LocationPageLayout = ({ location }: LocationPageLayoutProps) => {
     "name": "ArvadaDrainPro",
     "description": `Professional drain cleaning services in ${location.name}, Colorado. 24/7 emergency service, licensed technicians.`,
     "url": "https://arvadadrainpro.com",
-    "telephone": "+1-720-555-1234",
+    "telephone": "+1-844-898-0295",
     "areaServed": {
       "@type": "City",
       "name": location.name
@@ -142,7 +143,16 @@ const LocationPageLayout = ({ location }: LocationPageLayoutProps) => {
       <main>
         {/* Hero Section */}
         <section className="bg-secondary text-secondary-foreground pt-32 pb-20 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary to-primary/20" />
+          {/* Background image with overlay */}
+          <div className="absolute inset-0">
+            <img 
+              src={heroImage} 
+              alt={`Drain cleaning service in ${location.name}, Colorado`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-secondary/85" />
+            <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/90 to-primary/30" />
+          </div>
           <div 
             className="absolute inset-0 opacity-5"
             style={{
@@ -177,9 +187,9 @@ const LocationPageLayout = ({ location }: LocationPageLayoutProps) => {
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
-                  <a href="tel:+17205551234" className="btn-hero">
+                  <a href="tel:+18448980295" className="btn-hero">
                     <Phone className="w-5 h-5" />
-                    Call (720) 555-1234
+                    Call (844) 8980-295
                   </a>
                   <a href="#quote" className="btn-hero-secondary bg-transparent border-white text-white hover:bg-white hover:text-secondary">
                     Get Free Quote
@@ -393,11 +403,11 @@ const LocationPageLayout = ({ location }: LocationPageLayoutProps) => {
               We're your local drain cleaning experts. Fast response, fair prices, guaranteed results.
             </p>
             <a 
-              href="tel:+17205551234" 
+              href="tel:+18448980295" 
               className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 text-lg font-semibold rounded-sm hover:bg-secondary/90 hover:scale-105 transition-all"
             >
               <Phone className="w-5 h-5" />
-              Call (720) 555-1234
+              Call (844) 8980-295
             </a>
           </div>
         </section>
