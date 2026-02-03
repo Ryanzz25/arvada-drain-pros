@@ -9,6 +9,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import type { LucideIcon } from "lucide-react";
+import heroImage from "@/assets/hero-service-page.jpg";
 
 interface ServiceFAQ {
   question: string;
@@ -134,7 +135,16 @@ const ServicePageLayout = ({ service }: ServicePageLayoutProps) => {
       <main>
         {/* Hero Section */}
         <section className="bg-secondary text-secondary-foreground pt-32 pb-20 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary to-primary/20" />
+          {/* Background image with overlay */}
+          <div className="absolute inset-0">
+            <img 
+              src={heroImage} 
+              alt={`Professional ${service.title.toLowerCase()} service in Arvada`}
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-secondary/85" />
+            <div className="absolute inset-0 bg-gradient-to-br from-secondary via-secondary/90 to-primary/30" />
+          </div>
           <div 
             className="absolute inset-0 opacity-5"
             style={{
@@ -168,9 +178,9 @@ const ServicePageLayout = ({ service }: ServicePageLayoutProps) => {
                 </p>
                 
                 <div className="flex flex-wrap gap-4">
-                  <a href="tel:+17205551234" className="btn-hero">
+                  <a href="tel:+18448980295" className="btn-hero">
                     <Phone className="w-5 h-5" />
-                    Call (720) 555-1234
+                    Call (844) 8980-295
                   </a>
                   <a href="#quote" className="btn-hero-secondary bg-transparent border-white text-white hover:bg-white hover:text-secondary">
                     Get Free Quote
@@ -340,11 +350,11 @@ const ServicePageLayout = ({ service }: ServicePageLayoutProps) => {
               Don't wait for the problem to get worse. Call now for fast, professional service.
             </p>
             <a 
-              href="tel:+17205551234" 
+              href="tel:+18448980295" 
               className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 text-lg font-semibold rounded-sm hover:bg-secondary/90 hover:scale-105 transition-all"
             >
               <Phone className="w-5 h-5" />
-              Call (720) 555-1234
+              Call (844) 8980-295
             </a>
           </div>
         </section>

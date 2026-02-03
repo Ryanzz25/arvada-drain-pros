@@ -46,11 +46,11 @@ const CTASection = () => {
           {/* CTA buttons */}
           <div className="flex flex-wrap justify-center gap-4">
             <a 
-              href="tel:+17205551234" 
+              href="tel:+18448980295" 
               className="inline-flex items-center justify-center gap-2 bg-secondary text-secondary-foreground px-8 py-4 text-lg font-semibold rounded-sm transition-all duration-300 hover:bg-secondary/90 hover:scale-105 hover:shadow-lg"
             >
               <Phone className="w-5 h-5" />
-              Call (720) 555-1234
+              Call (844) 8980-295
             </a>
             <a 
               href="#quote"
